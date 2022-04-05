@@ -1,6 +1,6 @@
 local waterwell = table.deepcopy(data.raw["offshore-pump"]["offshore-pump"])
 waterwell.name = "stone-waterwell"
-waterwell.icon = "__StoneWaterWell__/graphics/stone-waterwell.icon.png"
+waterwell.icon = "__StoneWaterWell_Tayray__/graphics/stone-waterwell.icon.png"
 waterwell.icon_size = 32
 waterwell.icon_mipmaps = 1
 
@@ -12,7 +12,7 @@ waterwell.placeable_position_visualization = nil
 for i,d in ipairs({"north", "east", "south", "west"}) do
 	waterwell.picture[d] = 
 	{
-		filename = "__StoneWaterWell__/graphics/stone-waterwell.png",
+		filename = "__StoneWaterWell_Tayray__/graphics/stone-waterwell.png",
 		priority = "extra-high",
 		shift = {0.3, 0.8},
 		width = 256,
@@ -30,6 +30,8 @@ waterwell.collision_mask = { "water-tile", "object-layer", "player-layer", "item
 waterwell.adjacent_tile_collision_test = { "ground-tile" }
 waterwell.adjacent_tile_collision_mask = nil
 waterwell.fluid_box.pipe_connections[1].position = {0, 3}
+
+waterwell.pumping_speed = settings.startup["stonewell-pumping-speed"].value
 
 waterwell.circuit_wire_connection_points = circuit_connector_definitions["storage-tank"].points
 waterwell.circuit_connector_sprites = circuit_connector_definitions["storage-tank"].sprites
@@ -55,7 +57,7 @@ data:extend(
 	{
 		type = "item",
 		name = "stone-waterwell",
-		icon = "__StoneWaterWell__/graphics/stone-waterwell.icon.png",
+		icon = "__StoneWaterWell_Tayray__/graphics/stone-waterwell.icon.png",
 		icon_size = 32,
 		subgroup = "extraction-machine",
 		order = "b[fluids]-a[stone-waterwell]",

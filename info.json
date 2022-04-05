@@ -1,11 +1,11 @@
 {
-  "name": "StoneWaterWell",
-  "version": "1.20.1",
+  "name": "StoneWaterWell_Tayray",
+  "version": "1.21.0",
   "factorio_version": "1.1",
   "title": "Stone Water Well",
-  "author": "bSun0000, 0.15 update support from ElecNinja, 0.16 update as offshore pump by Roy",
+  "author": "Tayray, bSun0000, ElecNinja, Roy",
   "contact": "-",
-  "homepage": "https://forums.factorio.com/viewtopic.php?f=93&t=26937",
-  "description": "Fresh water anywhere.",
+  "homepage": "-",
+  "description": "Fresh water anywhere. Now with configurable pumping speed! Forked with added features",
   "dependencies": ["base"]
 }
